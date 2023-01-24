@@ -1,0 +1,36 @@
+{% extends 'mainApp/extends/base.html' %}
+{% load static %}
+
+{% block title %}Login{% endblock %}
+{% block site_css %}
+<link rel="stylesheet" href="{% static 'mainApp/styles/login.css' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+<div class="nav_bar_nashi">
+
+    <div class="login_title">
+        <h1>Login</h1>
+    </div>
+    
+    <div class="login_form">
+        <form method="POST">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Log In">
+        </form>
+    </div>
+    
+    <div class="register_link">
+        <h2>Need an account? <a href="{% url 'register' %}">Register</a></h2>
+    </div>
+    
+
+</div>
+
+
+{% endblock %}

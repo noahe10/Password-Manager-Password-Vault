@@ -1,0 +1,36 @@
+{% extends 'mainApp/extends/base.html' %}
+{% load static %}
+
+{% block title %}Password Vault{% endblock %}
+{% block site_css %}
+<link rel="stylesheet" href="{% static 'mainApp/styles/delete.css' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+{% include 'mainApp/includes/navbar.html' %}
+
+<div class="nav_bar_nashi"></div>
+
+    <div class="go_back">
+        <a href="{% url 'appList' %}">Go back to homepage</a>
+    </div>
+
+    <div class="delete_confirmation">
+        <h1>Are you sure you want to remove {{ manager.title }} from the vault?</h1>
+    </div>
+    
+    <div class="delete_button">
+        <form method="POST">
+            {% csrf_token %}
+            <input type="submit" value="Delete">
+        </form>
+    </div>
+    
+</div>
+
+{% endblock %}
+

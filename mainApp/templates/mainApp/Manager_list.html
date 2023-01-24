@@ -1,0 +1,30 @@
+{% extends 'mainApp/extends/base.html' %}
+{% load static %}
+
+{% block title %}Password Vault{% endblock %}
+{% block site_css %}
+<link rel="stylesheet" href="{% static 'mainApp/styles/list.css' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+{% endblock %}
+
+
+
+{% block content %}
+
+    {% include 'mainApp/includes/navbar.html' %}
+
+<div class="nav_bar_nashi">
+
+    <h1>PASSWORD VAULT</h1>
+
+    {% include 'mainApp/includes/search_bar.html' %}
+
+    {% include 'mainApp/includes/add_password.html' %}
+
+    {% include 'mainApp/includes/item.html' %}
+
+{% endblock %}
+
+</div>

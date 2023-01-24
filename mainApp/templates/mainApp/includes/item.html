@@ -1,0 +1,17 @@
+<div class="item">
+<table style="border-spacing: 60px 30px;">
+    {% if manager %}
+    {% for manager_item in manager %}
+    <div class="row_item">
+        <tr>
+                <td>{{ manager_item.title }}</td>
+                <td><span>{{ manager_item.hidden_password }}</span></td>
+                <td><a href="{% url 'appDetail' manager_item.id %}">View</a></td>
+        </tr>
+    </div>
+    {% endfor %}
+    {% else %}
+    <td>No passwords created</td>
+    {% endif %}
+</table>
+</div>

@@ -1,0 +1,86 @@
+.nav {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    font-size: 25px;
+    z-index: 1;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.nav a:hover {
+   color: rgb(216, 215, 215);
+}
+
+.nav_bar_nashi {
+   margin-top:260px;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+ }
+
+ h1, h2, h3, p, td, a {
+    color: #fff;
+ }
+
+ body {
+    background-color:rgb(40, 40, 71);
+ }
+
+ .go_back {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+ }
+
+ .go_back a {
+    font-size: 50px;
+    text-decoration: none;
+ }
+
+ .go_back a:hover {
+    color: rgb(216, 215, 215); 
+ }
+
+ .delete_confirmation {
+    display: flex;
+    justify-content: center;
+    font-size: 55px;
+    margin-bottom: 30px;
+    text-align: center;
+ }
+
+ .delete_button {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+ }
+
+ input[type="submit"]{
+    font-size: 50px;
+    padding: 5px 35px;
+    border-radius: 40px;
+    background-color: rgb(63, 63, 209);
+    border-style: none;
+    color: white;
+  }
+
+  input[type="submit"]:hover{
+    color: rgb(216, 215, 215);
+    cursor: pointer;
+  }

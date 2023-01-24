@@ -1,0 +1,39 @@
+{% extends 'mainApp/extends/base.html' %}
+{% load static %}
+
+{% block title %}Password Vault{% endblock %}
+{% block site_css %}
+<link rel="stylesheet" href="{% static 'mainApp/styles/detail.css' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+    {% include 'mainApp/includes/navbar.html' %}
+
+<div class="main">
+
+    <div class="go_back">
+        <a href="{% url 'appList' %}">Go back to homepage</a>
+    </div>
+
+    <div class="detail_password">
+        <h1>Your password for {{ manager.title }} is<up>:</up></h1>
+    </div>
+    <div class="detail_actual_password">
+        <h1>{{ manager.password }}</h1>
+    </div>
+
+    <div class="detail_edit"> 
+        <a href="{% url 'appUpdate' manager.id %}">Edit password</a>
+    </div>
+    <div class="detail_delete">
+        <a href="{% url 'appDelete' manager.id %}">Delete password</a><br>
+    </div>
+
+</div>
+
+{% endblock %}
+

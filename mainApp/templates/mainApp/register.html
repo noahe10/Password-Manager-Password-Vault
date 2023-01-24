@@ -1,0 +1,36 @@
+{% extends 'mainApp/extends/base.html' %}
+{% load static %}
+
+{% block title %}Register{% endblock %}
+{% block site_css %}
+<link rel="stylesheet" href="{% static 'mainApp/styles/register.css' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+<div class="nav_bar_nashi"></div>
+
+<div class="register_title">
+    <h1>Register</h1>
+</div>
+   
+<div class="register_form">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Register">
+    </form>
+</div>
+    
+<div class="login_link">
+    <h2>Have an account? <a href="{% url 'login' %}">Log In</a></h2>
+</div>
+    
+
+</div>
+
+{% endblock %}
+

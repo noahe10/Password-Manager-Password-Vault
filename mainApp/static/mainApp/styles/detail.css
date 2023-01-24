@@ -1,0 +1,106 @@
+.nav {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 40px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    font-size: 25px;
+    z-index: 1;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.nav a:hover {
+   color: rgb(216, 215, 215);
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', cursive;
+ }
+
+ h1, h2, h3, p, td, a {
+    color: #fff;
+ }
+
+ body {
+    background-color:rgb(40, 40, 71);
+ }
+
+ .main {
+    margin-top: 260px;
+ }
+
+ .go_back {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+ }
+
+ .go_back a {
+    font-size: 50px;
+    text-decoration: none;
+ }
+
+ .go_back a:hover {
+    color: rgb(216, 215, 215); 
+ }
+
+ .detail_password {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: -30px;
+ }
+
+ .detail_password up {
+    position: relative;
+    bottom: 7px;
+    left: 5px;
+ }
+
+ .detail_actual_password {
+    display: flex;
+    justify-content: center;
+    font-size: 75px;
+    margin-bottom: 10px;
+ }
+
+ .detail_delete {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+ }
+
+ .detail_delete a {
+    text-decoration: none;
+ }
+
+ .detail_delete a:hover {
+    color: rgb(216, 215, 215); 
+ }
+
+ .detail_edit {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+ }
+
+ .detail_edit a {
+    text-decoration: none;
+ }
+
+ .detail_edit a:hover {
+    color: rgb(216, 215, 215); 
+ }

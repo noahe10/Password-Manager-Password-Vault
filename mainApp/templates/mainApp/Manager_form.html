@@ -1,0 +1,37 @@
+{% extends 'mainApp/extends/base.html' %}
+{% load static %}
+
+{% block title %}Password Vault{% endblock %}
+{% block site_css %}
+<link rel="stylesheet" href="{% static 'mainApp/styles/form.css' %}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+{% endblock %}
+
+{% block content %}
+
+{% include 'mainApp/includes/navbar.html' %}
+
+<div class="nav_bar_nashi"></div>
+
+<div class="go_back">
+    <a href="{% url 'appList' %}">Go back to homepage</a>
+</div>
+    
+<div class="new_password_title">
+    <h1>New Password</h1>
+</div>
+    
+<div class="password_form">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+    <input type="submit" value="Submit">
+    </form>
+</div>
+    
+</div>
+
+{% endblock %}
+
