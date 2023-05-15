@@ -4,4 +4,5 @@ Created a web-based password manager application using Python/Django and HTML/CS
 
 # Login/Register
 I'm using the Login Mixin to create the login screen. In the event you not have an account, you can register for one.
+The register form will ask for a user to create a username and a password with special characters.
 ![image](https://github.com/noahe10/Password-Manager-Password-Vault/assets/118136389/ece87b9d-4c80-45ec-ac46-3c384fe44a98)
