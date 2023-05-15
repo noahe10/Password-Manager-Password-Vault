@@ -40,5 +40,5 @@ deleted from the manager.
 ![image](https://github.com/noahe10/Password-Manager-Password-Vault/assets/118136389/df89a18a-f635-4622-be3e-728be489c3c9)
 ![image](https://github.com/noahe10/Password-Manager-Password-Vault/assets/118136389/6e1b7fac-6617-47b6-801d-b9eec9a87808)
 
-### Logout
+### Logout/Conclusion
 Once you done with the password manager, you can logout by clicking the "Log Out" button at the top right of the page. This concludes the guide of the password manager! Thank you for taking the time to read!
