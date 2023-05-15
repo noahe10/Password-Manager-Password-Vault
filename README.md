@@ -2,6 +2,9 @@
 
 Created a web-based password manager application using Python/Django and HTML/CSS. Implemented CRUD functionality, a search bar for locating specific passwords, and a login/register screen
 
+### Sections
+[Login/Register]([###-Login/Register](https://github.com/noahe10/Password-Manager-Password-Vault/edit/main/README.md#loginregister))
+
 ### Login/Register
 This is the login screen. In the event you not have an account, you can register for one.
 The register form will ask for a user to create a username and a password with special characters. Once you're done making an account you can login and begin storing passwords!
